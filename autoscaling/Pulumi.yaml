@@ -1,0 +1,12 @@
+name: as-demo
+runtime:
+  name: python
+  options:
+    virtualenv: ../.venv
+description: autoscaling demo
+backend:
+  url: s3://impel-pulumi-state
+template:
+  config:
+    aws:region:
+      default: us-east-1

@@ -1,0 +1,27 @@
+VpcId: vpc-0e415bb3a8a38843b
+Region: us-east-1
+InstanceAmi: ami-0b37909ea8e7b9bde
+PublicSubnet1: subnet-097806d9207614633 # service-1
+PublicSubnet2: subnet-0ba1816925cef3189 # service-2
+PrivateSubnet1: subnet-097806d9207614633 # service1
+PrivateSubnet2: subnet-0ba1816925cef3189 # service2
+cname: vpn-legacy-us
+ip_range: '10.26.0.0/16'
+routes:
+  # us-east-1
+  - '10.1.224.0/19'
+  - '10.1.192.0/19'
+  - '10.1.64.0/18'
+  - '10.1.0.0/18'
+  # eu-west-1
+  - '10.2.224.0/19'
+  - '10.2.192.0/19'
+  - '10.2.64.0/18'
+  - '10.2.0.0/18'
+rt_table: rtb-0690ef5a347934e4c
+vpc_routes:
+  pcx-0bb62cd3f74bb3dc1:
+    - '10.2.0.0/18'
+    - '10.2.64.0/18'
+    - '10.2.192.0/19'
+    - '10.2.224.0/19'

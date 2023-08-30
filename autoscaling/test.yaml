@@ -1,0 +1,15 @@
+VpcId: vpc-0b28df8980a1905d5
+Region: us-east-1
+InstanceAmi: ami-0b37909ea8e7b9bde # vpc-test-us-east-1
+PublicSubnet1: subnet-02e8a3cb07847b510 # us-east-1b/test/service/public
+PublicSubnet2: subnet-067eff23fec894b4b # us-east-1c/test/service/public
+PrivateSubnet1: subnet-0931da2fc367b0f05 # us-east-1b/test/service/private
+PrivateSubnet2: subnet-01a846a5998c97578 # us-east-1c/test/service/private
+cname: ''
+ip_range: 10.28.0.0/16
+routes:
+  - 10.128.0.0/16
+  - 10.129.0.0/16
+  - 10.130.0.0/16
+rt_table: ''
+vpc_routes: {}
